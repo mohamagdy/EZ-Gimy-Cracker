@@ -27,8 +27,6 @@ for i = 3:size(training_sets, 1)
             % Extracting the features from the image
             p(end + 1, :) = hierarchicalCentroid(binary_image, 4, 0);
             
-            % p(end + 1, :) = feature_extractor(binary_image)';
-            
             % Saving the character
             t(end + 1, 1) = str2num(training_sets(i).name);
         catch
